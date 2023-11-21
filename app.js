@@ -1,13 +1,13 @@
 const btn = document.querySelector("button");
 const main = document.querySelector(".container");
-const url = "text.txt";
+const url = "ajax.txt";
 // console.log(btn);
 btn.onclick = reqData;
 
 // btn.onclick = () => { console.log("clicked");}
 
-function output(text) {
-  console.log(text);
+function output(ajax) {
+  console.log(ajax);
   console.log(this.responseText);
   main.innerHTML = this.responseText;
 }
